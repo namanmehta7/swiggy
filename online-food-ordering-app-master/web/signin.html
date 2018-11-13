@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Signin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+form {
+padding-left: 700px;
+padding-right: 500px;
+}
+
+input[type=text], input[type=password] {
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.btn1{
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    background-color: orangered;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    padding-top: 50px;
+    padding-left: 320px;
+}
+
+img.avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    float: left;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+}
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('n5qdmnqyckg3oophqpeo.gif');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+.div123{
+    height: 500px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div style="padding-bottom: 20px;padding-top: 20px;" class="navbar">
+            <ul>
+                <li id="li1">
+                    <div class="dropdown">
+  <button class="dropbtn">Locations</button>
+  <div class="dropdown-content">
+    <a href="#">Delhi</a>
+    <a href="#">Chandigarh</a>
+    <a href="#">Mumbai</a>
+  </div>
+</div>
+                </li>
+                     <li style="float: right"><a class="active" href="signin.html" id="a11">Signin</a></li>
+                    <li style="float: right"><a class="active" href="">Cart</a></li>
+                    <li style="float: right"><a class="active" href="contact.html">Contact</a></li>
+                    <li style="float: right"><a class="active" href="index.jsp">Home</a></li>
+                
+            </ul>
+        </div>
+        <div class="parallax"></div>
+        <div class="div123">
+             <div class="imgcontainer">
+    <img src="images.jpeg" alt="Avatar" class="avatar">
+  </div>
+            <form action="">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label><br>
+    <button type="submit" class="btn1"><a href="index.jsp" style="text-decoration: none; color: white;">  Signin</a></button>
+     <button type="submit" class="btn1"><a href="signup.html" style="text-decoration: none; color: white;">Sign Up</a></button>
+  </div>
+</form>
+        </div>
+
+<div class="parallax"></div>
+    </body>
+</html>

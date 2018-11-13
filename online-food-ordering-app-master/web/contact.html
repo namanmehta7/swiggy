@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: orangered;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div style="padding-bottom: 20px;padding-top: 20px;" class="navbar">
+            <ul>
+                <li id="li1">
+                    <div class="dropdown">
+  <button class="dropbtn">Locations</button>
+  <div class="dropdown-content">
+    <a href="#">Delhi</a>
+    <a href="#">Chandigarh</a>
+    <a href="#">Mumbai</a>
+  </div>
+</div>
+                </li>
+                     <li style="float: right"><a class="active" href="signin.html" id="a11">Signin</a></li>
+                    <li style="float: right"><a class="active" href="">Cart</a></li>
+                    <li style="float: right"><a class="active" href="contact.html">Contact</a></li>
+                    <li style="float: right"><a class="active" href="index.jsp">Home</a></li>
+                
+            </ul>
+        </div>
+         <div class="row">
+  <div class="column">
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/bmwnevtlf9j4x2w0ovc9" alt="Snow" id="img11">
+  </div>
+  <div class="column">
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/d5mfagoowfi6goyzgloi" alt="Forest"  class="img11">
+  </div>
+  <div class="column">
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/oj0pz7yujty06wie6cur" alt="Mountains"  class="img11">
+  </div>
+            <div class="column">
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rhnay3cqvw3reqc6nnz5" alt="Mountains"  id="img12">
+  </div>
+</div>
+    <center><img src="data:image/png;base64,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" style="border-radius:50%;"></center>
+        <div class="container">
+  <form action="" style="padding-left:500px;padding-right: 500px; background-color: whitesmoke;">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" required>
+<label for="phone"><b>Phone No.</b></label>
+    <input type="text" placeholder="Enter Phone no." name="phone" required>
+    <label for="city">Country</label>
+    <select id="country" name="city">
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Pune">Pune</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <div style="padding-bottom:40px;"><input type="submit" value="Submit"></div>
+  </form>
+</div>
+     <div class="parallax"></div>
+    </body>
+</html>
